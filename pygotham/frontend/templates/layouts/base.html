@@ -2,7 +2,7 @@
 
 {% from 'macros/common.html' import messages %}
 
-{% block title %}PyGotham 2014{% endblock %}
+{% block title %}{{ current_event }}{% endblock %}
 
 {% block foundation_styles %}
   {% assets 'css_foundation' %}
@@ -59,9 +59,9 @@
 
       {% block footer %}
         <footer>
-          <h4>PyGotham 2014</h4>
+          <h4>{{ current_event }}</h4>
           <section class="credits">
-            PyGotham 2014 is a production of <a href="http://bigapplepy.org">Big Apple Py</a>.<br>
+            {{ current_event }} is a production of <a href="http://bigapplepy.org">Big Apple Py</a>.<br>
             Design by <a href="http://sonjaleix.com">Sonja Leix</a>. Hosting provided by <a href="http://www.rackspace.com">Rackspace</a>.<br>
             Questions? Comments? Please contact <a href="mailto:pygotham@googlegroups.com">pygotham@googlegroups.com</a>.<br>
           </section>
