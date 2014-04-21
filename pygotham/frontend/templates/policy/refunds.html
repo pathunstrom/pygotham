@@ -1,0 +1,15 @@
+{% extends 'layouts/base.html' %}
+
+{% block title %}Refund Policy - {{ super() }}{% endblock %}
+
+{% block main %}
+  <section class="jumbotron">
+    <h1>Refund Policy:</h2>
+    <table>
+    <tr><td>Corporate: Up to one week before conference:</td><td>50% Refund</td></tr>
+    <tr><td>Student/Individual: Up to one week before conference:</td><td>100% Refund</td></tr>
+    <tr><td>Less than one week before conference:</td><td>No Refund></td></tr>
+    </table>
+    Contact organizers@pygotham.org for issues related to refunds.
+  </section>
+{% endblock %}
