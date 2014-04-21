@@ -24,10 +24,13 @@ class TalkSubmissionForm(ModelForm):
             'name': {'label': 'Title'},
             'description': {'label': 'Description'},
             'level': {'label': 'Experience Level'},
+            'duration': {'label': 'Talk Duration'},
+            'talk_type': {'label': 'Talk Type'},
             'abstract': {'label': 'Abstract'},
             'objectives': {'label': 'Objectives'},
             'target_audience': {'label': 'Target Audience'},
             'outline': {'label': 'Outline'},
             'additional_requirements': {'label': 'Additional Requirements'},
+            'need_a_TA': {'label': "If you've proposed a class, do you need help finding a TA?"},
             'recording_release': {'label': 'Recording Release'},
         }

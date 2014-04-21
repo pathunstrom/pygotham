@@ -38,6 +38,18 @@ class Talk(db.Model):
         db.Enum('novice', 'intermediate', 'advanced', name='level'),
         nullable=False,
     )
+    duration = db.Column(
+        db.Enum('30 minute', '60 minute', '90 minute', 'half-day', 'full-day'),
+        name='duration',
+        default='60 minute',
+        nullable=False,
+    )
+    talk_type = db.Column(
+        db.Enum('presentation', 'hands-on class', name='talk_type'),
+        default='presentation',
+        nullable=False,
+    )
+    needs_a_TA = db.Column(db.Boolean, default=False, nullable=False)
     recording_release = db.Column(db.Boolean, nullable=False)
 
     abstract = db.Column(db.Text)

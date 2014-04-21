@@ -1,0 +1,7 @@
+flask
+flask-admin
+flask-assets
+flask-foundation
+flask-migrate
+flask-security
+sqlalchemy
