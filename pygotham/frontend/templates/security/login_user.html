@@ -5,15 +5,6 @@
 
 {% block title %}Log in - {{ super() }}{% endblock %}
 
-{% block jumbotron %}
-  <section class="jumbotron">
-    <h1>Log in</h1>
-    {% if current_event %}
-      <p>Welcome to {{ current_event }}</p>
-    {% endif %}
-  </section>
-{% endblock %}
-
 {% block main %}
   <div class="container">
     <div class="row">
